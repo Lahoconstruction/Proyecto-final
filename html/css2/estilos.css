@@ -1,0 +1,42 @@
+body {font-family: "dancing script"; width: 900px; margin: 0 auto; background-color: #02010a;}
+
+header {height: 1em; background-color: #5b7989; border-radius: 10px 10px 0 0;
+  padding-top: 2%;	padding-bottom: 2%; text-align: center; color:white;
+  display: flex; justify-content: space-between; align-items: center; }
+  a {text-decoration: none; color:white;}
+#banner div#destacados1 {/*display: flex; align-items: center; text-align: left;*/ text-shadow: 1px 2px 3px #02010a;}
+#banner div#destacados2 {/*text-align: right; justify-content: flex-end;*/ }
+
+#banner {animation: animationbanner 1.5s;}
+
+#Inicio {text-decoration: underline;}
+#Paisajes {text-decoration: underline;}
+
+article {box-sizing: border-box;}
+  #Columna1 {background-color: #d5c75f; width: 33.33%; height: 400px; text-align: center;}
+  #Columna2 {background-color: #d5c75f; width: 33.33%; height: 400px; text-align: center;}
+  #Columna3 {background-color: #d5c75f; width: 33.33%; height: 400px; text-align: center;}
+
+#contenido section{display: flex; flex-direction: row;}
+
+#Columna1 img {width: 60%; margin: 20px;}
+#Columna2 img {width: 60%; margin: 20px;}
+#Columna3 img {width: 60%; margin: 20px;}
+
+#acc1000 {webkit-filter: blur (10px); filter: blur(10px);}
+#acc1001 {webkit-filter: grayscale (100%); filter: grayscale(100%);}
+#acc1002 {webkit-filter: sepia (100%); filter: sepia(100%);}
+#acc1003 {webkit-filter: grayscale (100%); filter: grayscale(100%);}
+#acc1005 {webkit-filter: grayscale (100%); filter: grayscale(100%);}
+
+footer {background-color: #C6d5c5; border-radius: 0px 0px 10px 10px; width: 900px;}
+
+.información {text-align: center; display: flex; flex-direction: row; width: 100%; }
+.informacion div {width: 25%;}
+
+@media (min-width: 900px) {.contacto, .terminos, .redessociales, .derechos {width: 24.5%;}
+  .informacion {display: flex; flex-direction: row; justify-content: space-between; width: 900px; margin-left: auto; margin-right: auto;}}
+
+@media (max-width: 600px) {body {width: 100%; display: flex; flex-direction: column;} header {width: 100%; height: auto; display: flex; flex-direction: column;}
+  header div{width: 100%;} #contenido {width: 100%; height: auto;} #contenido section {width: 100%; display: flex; flex-direction: column;}
+  #contenido section article {width: 100%; height: auto; display: flex; flex-direction: column;} footer {width: 100%;}}
